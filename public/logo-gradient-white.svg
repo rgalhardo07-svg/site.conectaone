@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 80" width="480" height="80">
+  <defs>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <style>
+      .wordmark { font-family: 'Exo 2', 'Arial', sans-serif; font-weight: 600; font-size: 38px; }
+    </style>
+  </defs>
+  <rect width="480" height="80" fill="#FFFFFF"/>
+  <rect x="12" y="8" width="64" height="64" rx="18" fill="url(#iconGrad)"/>
+  <path d="M54,26 A18,18 0 1,0 54,54" fill="none" stroke="white" stroke-width="7.5" stroke-linecap="round"/>
+  <line x1="54" y1="26" x2="54" y2="54" stroke="white" stroke-width="7.5" stroke-linecap="round"/>
+  <text x="96" y="54" class="wordmark" fill="url(#textGrad)">conectaone</text>
+</svg>

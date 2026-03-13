@@ -1,0 +1,16 @@
+name = "conectaone-website"
+compatibility_date = "2024-03-07"
+
+[build]
+command = "npm install --no-package-lock && npm run build"
+output_dir = "dist"
+
+[build.upload]
+format = "directory"
+
+[site]
+bucket = "./dist"
+
+[[routes]]
+pattern = "/api/*"
+script = "functions/api/contact.js" 
