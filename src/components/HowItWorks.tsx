@@ -33,9 +33,7 @@ const HowItWorks = () => {
     <section id="how-it-works" className="py-24 md:py-32 relative overflow-hidden"
              style={{ background: '#0a0e1a' }}>
 
-      {/* Connector line (desktop) */}
-      <div className="absolute top-[42%] left-0 right-0 h-px hidden lg:block pointer-events-none"
-           style={{ background: 'linear-gradient(90deg, transparent 5%, rgba(99,102,241,0.3) 20%, rgba(99,102,241,0.3) 80%, transparent 95%)' }} />
+
 
       <div className="section-container relative z-10">
 

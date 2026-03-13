@@ -12,51 +12,62 @@ const SEO = ({
   canonical = "https://conectaone.com.br"
 }: SEOProps) => {
   const keywords = [
-    "inteligência artificial",
-    "IA para empresas",
+    "inteligência artificial empresas",
     "automação inteligente",
+    "consultoria IA São Paulo",
     "integração de sistemas",
-    "análise preditiva",
-    "consultoria em IA",
     "transformação digital",
-    "automação de processos",
-    "soluções empresariais",
-    "tecnologia empresarial",
-    "IA corporativa",
-    "machine learning",
-    "otimização de processos",
-    "eficiência operacional",
-    "inovação tecnológica",
-    "chatbots inteligentes",
-    "RPA automação robótica",
-    "business intelligence",
-    "data science",
-    "algoritmos de IA",
-    "processamento de linguagem natural",
-    "visão computacional",
-    "deep learning",
-    "neural networks",
-    "AI consulting",
-    "digital transformation",
-    "workflow automation",
-    "predictive analytics",
-    "smart solutions",
-    "enterprise AI",
     "ConectaOne",
-    "soluções personalizadas IA",
-    "consultoria tecnológica",
-    "implementação IA empresas",
-    "desenvolvimento de plataformas",
-    "micro SaaS personalizado",
-    "software sob medida",
-    "plataformas digitais",
-    "desenvolvimento web",
-    "APIs robustas",
-    "arquitetura moderna",
-    "soluções escaláveis",
-    "monetização digital",
-    "plataforma como serviço"
+    "SAP Business One",
+    "automação de processos",
   ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Como a IA pode beneficiar minha empresa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nossa IA pode otimizar processos, reduzir custos operacionais e aumentar a eficiência do seu negócio através de automação inteligente, análise preditiva e integração de sistemas. Clientes relatam redução de até 70% em custos operacionais e aumento significativo em produtividade."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto tempo leva para implementar as soluções?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O tempo de implementação varia de acordo com a complexidade do projeto. Tipicamente, soluções básicas podem ser implementadas em 2-3 semanas, enquanto projetos mais complexos podem levar de 1-2 meses."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Preciso ter conhecimento técnico para usar as soluções?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Não. Nossas soluções são desenvolvidas com foco na usabilidade, com interfaces intuitivas e treinamento completo para sua equipe. Além disso, oferecemos suporte contínuo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como é feito o suporte após a implementação?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oferecemos suporte técnico dedicado, monitoramento contínuo e manutenção preventiva. Nossa equipe está sempre disponível para ajustes, melhorias e resolução de dúvidas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "As soluções podem ser personalizadas para meu negócio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. Todas as nossas soluções são customizadas para atender às necessidades específicas do seu negócio. Realizamos uma análise detalhada dos seus processos e objetivos para desenvolver uma solução sob medida."
+        }
+      }
+    ]
+  };
 
   return (
     <Helmet>
@@ -148,6 +159,11 @@ const SEO = ({
             "addressCountry": "BR"
           }
         })}
+      </script>
+
+      {/* FAQ Schema - Rich Results no Google */}
+      <script type="application/ld+json">
+        {JSON.stringify(faqSchema)}
       </script>
 
       {/* Tags Adicionais */}

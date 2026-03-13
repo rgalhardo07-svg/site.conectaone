@@ -4,10 +4,7 @@ Allow: /
 # Sitemap
 Sitemap: https://conectaone.com.br/sitemap.xml
 
-# Crawl-delay
-Crawl-delay: 10
-
 # Disallow
 Disallow: /api/
 Disallow: /admin/
-Disallow: /private/ 
+Disallow: /private/

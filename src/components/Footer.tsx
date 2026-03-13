@@ -136,12 +136,9 @@ const Footer = () => {
           </div>
 
           {/* Bottom bar */}
-          <div className="pt-8 border-t border-white/6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="pt-8 border-t border-white/6 flex items-center justify-center">
             <p className="text-xs text-brand-muted">
               © {currentYear} ConectaOne. Todos os direitos reservados.
-            </p>
-            <p className="text-xs text-brand-muted">
-              Feito com IA &amp; ❤️ no Brasil
             </p>
           </div>
         </div>
