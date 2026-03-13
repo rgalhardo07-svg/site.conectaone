@@ -9,7 +9,7 @@ interface SEOProps {
 const SEO = ({ 
   title = "ConectaOne | Soluções em IA e Automação Inteligente para Empresas",
   description = "Transforme seu negócio com soluções personalizadas em Inteligência Artificial. Automação de processos, integração de sistemas, análise preditiva e consultoria especializada em IA para aumentar produtividade e reduzir custos operacionais.",
-  canonical = "https://conectaone.com.br"
+  canonical = "https://conectaone.com"
 }: SEOProps) => {
   const keywords = [
     "inteligência artificial empresas",

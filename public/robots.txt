@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://conectaone.com.br/sitemap.xml
+Sitemap: https://conectaone.com/sitemap.xml
 
 # Disallow
 Disallow: /api/
